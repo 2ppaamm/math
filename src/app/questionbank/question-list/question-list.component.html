@@ -1,0 +1,6 @@
+<ag-question-detail [selectedQuestion]="selectedQuestion"></ag-question-detail>
+	<div class="container">
+      <div class="row">
+	      <ag-question *ngFor="let question of questions | async" [question]="question" (click)="onSelect(question)"></ag-question>
+      </div>
+	</div>
